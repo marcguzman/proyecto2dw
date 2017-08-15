@@ -7,4 +7,15 @@
     $pw     = "";
     $db     = "Proyecto2";
     
+
+function CONEX()
+{
+     global $link;
+     $link = new mysqli($host, $user, "", $db);
+     return $link;
+}
+
+    
+    
+    
 ?>
