@@ -13,5 +13,7 @@ and open the template in the editor.
         <?php
         // put your code here
         ?>
+        <br>
+        <a href="Formulario.php">Formulario</a>        
     </body>
 </html>
