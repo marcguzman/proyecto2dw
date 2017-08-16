@@ -1,13 +1,33 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/banner.css">
     </head>
+     <br>
+    <div class="topnav" id="myTopnav">
+        <a href="index.php">Menu</a>
+        <a href="Formulario.php">Formulario</a>
+        <a href="#contact">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+    
+    <header>
+        <div class="contenedor">
+        <h1 class="">Formulario</h1>
+        <nav class="menu">
+        </nav>
+    </header>
+    
     <body>
-        <br><br><br>
-        <a href="Altas.php">Ingresar Nuevo Registro</a>
-        <br><br><br>
-        
+    
+    <p>Ingresar Nuevo Registro</p>
+    <form method="get" action="Altas.php">
+    <input type="image" value="Enviar este formulario" src="images/Agregar.png" />
+    
     <?php
     include ("conexion.php");
 
@@ -30,34 +50,35 @@
         exit;
     }
     
-    echo '<br><br>';
-    echo '<center>Integrantes Actuales</center>';
-    echo '<br><br><br>';
     
-    echo '<table align="center" border=1><tr>';
-    echo '<td>Nombre</td>';      
-    echo '<td>Carnet</td>';      
-    echo '<td>Email</td>';      
-    echo '<td>Eliminar</td>';      
-    echo '<td>Modificar</td>';      
-    echo '</tr>';
+        <br><br><br>
+        <h1>Integrantes Actuales</h1>
+        <br><br><br>
+    
+    <table align="center" border=1><tr>
+    <td>Nombre</td>
+    <td>Carnet</td>      
+    <td>Email</td>      
+    <td>Eliminar</td>      
+    <td>Modificar</td>      
+    </tr>
     
     
     
 while($fila = mysqli_fetch_assoc($resultado))
 {
-    echo '<tr> <td>';
-    echo $fila['Nombre'] .'</td>';
+    <tr> <td>
+    $fila['Nombre'] .</td>
     echo '<td>' . $fila['Carnet'] . '</td>';
     echo '<td>' . $fila['Email'];    
-    echo '</td>';
-    echo '<td><form action="Bajas.php?id=' . $fila['ID'] .  '" method="post" name="FrmEliminar"><center><input type="image" id="Eliminar" name="Eliminar" text="Eliminar" value="Eliminar" src="images/Eliminar.png" onclick="javascript:document.form.submit();" /></center></form></td>';
-    echo '<td><form action="Cambios.php?id=' . $fila['ID'] .  '" method="post" name="FrmCambiar"><center><input type="image" id="Cambiar" name="Cambiar" text="Cambiar" value="Cambiar" src="images/Editar.png" onclick="javascript:document.form.submit();" /></center></form></td>';
+    </td>
+    <td><form action="Bajas.php?id=' . $fila['ID'] .  '" method="post" name="FrmEliminar"><center><input type="image" id="Eliminar" name="Eliminar" text="Eliminar" value="Eliminar" src="images/Eliminar.png" onclick="javascript:document.form.submit();" /></center></form></td>
+    <td><form action="Cambios.php?id=' . $fila['ID'] .  '" method="post" name="FrmCambiar"><center><input type="image" id="Cambiar" name="Cambiar" text="Cambiar" value="Cambiar" src="images/Editar.png" onclick="javascript:document.form.submit();" /></center></form></td>
     
-    echo '</tr>';
+    </tr>
 }       
 
-echo '</table>';
+</table>
 mysqli_free_result($resultado);
 
 ?>

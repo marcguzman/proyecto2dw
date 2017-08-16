@@ -26,7 +26,11 @@ $Email = filter_input(INPUT_POST, 'Email');
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Actualizar</title>
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/banner.css">
     </head>
     <body>
     <center>

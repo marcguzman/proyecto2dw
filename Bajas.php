@@ -19,8 +19,25 @@ $ID = $_GET['id'];
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Bajas</title>
+        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/banner.css">
     </head>
+    <br>
+    <div class="topnav" id="myTopnav">
+        <a href="index.php">Menu</a>
+        <a href="Formulario.php">Formulario</a>
+        <a href="#contact">Contacto</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div> 
+     <header>
+        <div class="contenedor">
+        <h1 class="">Bajas</h1>
+        <nav class="menu">
+        </nav>
+    </header>
     <body>
     <center>
         <a href="Formulario.php">Regresar al Formulario</a>
