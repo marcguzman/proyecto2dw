@@ -15,7 +15,7 @@ $Email = filter_input(INPUT_POST, 'Email');
             
     //Sql para insertar datos
     $sql = "UPDATE  p2_integrantes set Nombre = '" . $Nombre . 
-            "' , Carnet = '" . $Carnet . "' , Email = '" . $Carnet .
+            "' , Carnet = '" . $Carnet . "' , Email = '" . $Email .
             "' WHERE ID = " . $ID;
     
     mysqli_query($con,$sql);

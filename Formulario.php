@@ -29,7 +29,7 @@
     <input type="image" value="Enviar este formulario" src="images/Agregar.png" />
     
     <?php
-    include ("conexion.php");
+    include ("Conexion.php");
 
     if (!$enlace = mysqli_connect($host,$user,$pw)) {
      echo 'No pudo conectarse a mysql';
@@ -50,35 +50,34 @@
         exit;
     }
     
+    echo '<br><br><br>';
+    echo '<h1>Integrantes Actuales</h1>';
+    echo '<br><br><br>';
     
-        <br><br><br>
-        <h1>Integrantes Actuales</h1>
-        <br><br><br>
-    
-    <table align="center" border=1><tr>
-    <td>Nombre</td>
-    <td>Carnet</td>      
-    <td>Email</td>      
-    <td>Eliminar</td>      
-    <td>Modificar</td>      
-    </tr>
-    
+    echo '<table align="center" border=1><tr>';
+    echo '<td>Nombre</td>';
+    echo '<td>Carnet</td>';
+    echo '<td>Email</td>';     
+    echo '<td>Eliminar</td>';      
+    echo '<td>Modificar</td>';      
+    echo '</tr>';
     
     
+   
 while($fila = mysqli_fetch_assoc($resultado))
 {
-    <tr> <td>
-    $fila['Nombre'] .</td>
+    echo '<tr> <td>';
+    echo $fila['Nombre'] .'</td>';
     echo '<td>' . $fila['Carnet'] . '</td>';
     echo '<td>' . $fila['Email'];    
-    </td>
-    <td><form action="Bajas.php?id=' . $fila['ID'] .  '" method="post" name="FrmEliminar"><center><input type="image" id="Eliminar" name="Eliminar" text="Eliminar" value="Eliminar" src="images/Eliminar.png" onclick="javascript:document.form.submit();" /></center></form></td>
-    <td><form action="Cambios.php?id=' . $fila['ID'] .  '" method="post" name="FrmCambiar"><center><input type="image" id="Cambiar" name="Cambiar" text="Cambiar" value="Cambiar" src="images/Editar.png" onclick="javascript:document.form.submit();" /></center></form></td>
+    echo '</td>';
+    echo '<td><form action="Bajas.php?id=' . $fila['ID'] .  '" method="post" name="FrmEliminar"><center><input type="image" id="Eliminar" name="Eliminar" text="Eliminar" value="Eliminar" src="images/Eliminar.png" onclick="javascript:document.form.submit();" /></center></form></td>';
+    echo '<td><form action="Cambios.php?id=' . $fila['ID'] .  '" method="post" name="FrmCambiar"><center><input type="image" id="Cambiar" name="Cambiar" text="Cambiar" value="Cambiar" src="images/Editar.png" onclick="javascript:document.form.submit();" /></center></form></td>';
     
-    </tr>
+    echo '</tr>';
 }       
 
-</table>
+echo '</table>';
 mysqli_free_result($resultado);
 
 ?>
