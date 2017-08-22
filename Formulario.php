@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/tabla.css">
     </head>
      <br>
     <div class="topnav" id="myTopnav">
@@ -24,10 +25,10 @@
     
     <body>
     
-    <p>Ingresar Nuevo Registro</p>
+    <h1>Ingresar Nuevo Registro</h1><br><br>
     <form method="get" action="Altas.php">
     <input type="image" value="Enviar este formulario" src="images/Agregar.png" />
-    
+    </form>
     <?php
     include ("Conexion.php");
 
@@ -52,14 +53,14 @@
     
     echo '<br><br><br>';
     echo '<h1>Integrantes Actuales</h1>';
-    echo '<br><br><br>';
+    echo '<br><br>';
     
-    echo '<table align="center" border=1><tr>';
-    echo '<td>Nombre</td>';
-    echo '<td>Carnet</td>';
-    echo '<td>Email</td>';     
-    echo '<td>Eliminar</td>';      
-    echo '<td>Modificar</td>';      
+    echo '<table align="center" border=0 bordercolor=blue><tr>';
+    echo '<th>Nombre</th>';
+    echo '<th>Carnet</th>';
+    echo '<th>Email</th>';     
+    echo '<th>Eliminar</th>';      
+    echo '<th>Modificar</th>';      
     echo '</tr>';
     
     
