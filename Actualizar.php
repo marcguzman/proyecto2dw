@@ -34,6 +34,14 @@ $Email = filter_input(INPUT_POST, 'Email');
         <link rel="stylesheet" href="css/3dfont.css">
     </head>
     <body>
+     
+    <section class="fondo-2">
+    <center >
+     <img class="imga" src="images/actualiza.svg">   
+       <H2 >Usuario actualizado correctamente </p>
+    </center>    
+    </section>       
+        
         
    <section class="color-1">
      <center>

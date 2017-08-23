@@ -40,9 +40,16 @@ $ID = $_GET['id'];
         </nav>
     </header>
     <body>
+    <section class="fondo-1">
+    <center >
+     <img  src="images/use_remove.png">   
+       <H2 >Usuario borrado correctamente </p>
+    </center>    
+    </section>
+    
     <section class="color-1">
      <center>
-      <nav class="cl-effect-1">
+      <nav class="cl-effect-8">
         <a href="Formulario.php">REGRESAR AL FORMULARIO</a>
         
         </nav>
