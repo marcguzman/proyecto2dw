@@ -30,23 +30,36 @@ else{
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/3dfont.css">
     </head>
     <br>
-    <div class="topnav" id="myTopnav">
+  <!--  <div class="topnav" id="myTopnav">
         <a href="index.php">Menu</a>
         <a href="Formulario.php">Formulario</a>
         <a href="#contact">Contacto</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div> 
+    </div> -->
      <header>
         <div class="contenedor">
         <h1 class="">Registro de Usuarios</h1>
-        <nav class="menu">
-        </nav>
+      <!-- <nav class="menu">
+        </nav> -->
     </header>
     <body>
-    <center>
-        <a href="Formulario.php">Regresar al Formulario</a>
+        <br><br>
+        
+         <center><img src="images/New.jpg" width="600" height="450">
+         <h2>Usuario agregado correctamente</h2>
+         </center>
+        <br>  <!-- Para rollback-->
+    <section class="color-1">
+     <center>
+         
+      <nav class="cl-effect-1">
+        <a href="Formulario.php">REGRESAR AL FORMULARIO</a>
+        
+        </nav>
     </center>
+    </section>  
     </body>
 </html>
