@@ -27,19 +27,20 @@ $ID = $_GET['id'];
         <link rel="stylesheet" href="css/3dfont.css">
     </head>
     <br>
-    <div class="topnav" id="myTopnav">
+   <!--  <div class="topnav" id="myTopnav">
         <a href="index.php">Menu</a>
         <a href="Formulario.php">Formulario</a>
         <a href="#contact">Contacto</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div> 
+    </div>      </div> -->
      <header>
         <div class="contenedor">
         <h1 class="">Bajas</h1>
-        <nav class="menu">
-        </nav>
+      <!--   <nav class="menu">
+        </nav>  -->
     </header>
     <body>
+        <br><br><br>
     <section class="fondo-1">
     <center >
      <img  src="images/use_remove.png">   
@@ -51,7 +52,7 @@ $ID = $_GET['id'];
      <center>
       <nav class="cl-effect-8">
         <a href="Formulario.php">REGRESAR AL FORMULARIO</a>
-        
+
         </nav>
     </center>
     </section>  
